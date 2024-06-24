@@ -90,21 +90,8 @@ Gönderen, alıcı ve tutar bilgilerini özetler. "Onayla" veya "Reddet" butonla
 
 ### Örnek NFCScanner.js, Hashing.js ve Backend Bağlantıları
 
-Uygulamada NFC bağlantısı ve veri şifreleme fonksiyonları simüle edilmiştir. Backend bağlantıları ve API dosyaları proje dizinine eklenmiştir.
+Uygulamada NFC bağlantısı ve veri şifreleme fonksiyonları (AES,SHA-256) simüle edilmiştir. Backend bağlantıları ve API dosyaları proje dizinine eklenmiştir.
 
-## Katkıda Bulunma
-
-Katkıda bulunmak isterseniz, lütfen bir fork yapın, branş oluşturun, değişikliklerinizi yapın ve bir pull request gönderin.
-
-1. **Fork**: `https://github.com/mertyilmaz5/MoneyTransferApp/fork`
-2. **Branş oluşturun**: `git checkout -b feature/AmazingFeature`
-3. **Değişikliklerinizi yapın**: `git commit -m 'Add some AmazingFeature'`
-4. **Branşa push yapın**: `git push origin feature/AmazingFeature`
-5. **Pull request açın**
-
-## Lisans
-
-Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasına bakınız.
 
 ## Uygulama İşlevselliği
 
