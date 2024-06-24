@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "MoneyTransferApp",
+    "slug": "MoneyTransferApp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "android.permission.NFC"
+      ],
+      "package": "com.icardiyolog.MoneyTransferApp"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "react-native-nfc-manager",
+        {
+          "nfcPermission": "Custom permission message",
+          "selectIdentifiers": [
+            "A0000002471001"
+          ],
+          "systemCodes": [
+            "8008"
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6a300ddc-f538-4ba1-a648-3d22591b445a"
+      }
+    }
+  }
+}

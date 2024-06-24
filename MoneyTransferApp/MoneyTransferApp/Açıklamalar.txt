@@ -1,0 +1,39 @@
+# React Native Payment Demo
+
+Bu proje, React Native kullanarak basit bir ödeme senaryosunu simüle eden bir mobil uygulamadır. Uygulama, kullanıcıların giriş yaparak hesaplarını seçmelerine, tutar belirlemelerine ve ödeme işlemi yapmalarına olanak tanır. Aynı zamanda NFC tarama simülasyonu ve backend bağlantıları için örnekler içerir.
+
+## Özellikler
+
+- Kullanıcı Girişi
+- Gönderen Hesap Listesi
+- Tutar Girişi
+- QR Kod ile Gönderici Bilgisi
+- NFC Tarama Simülasyonu
+- Alıcı Hesap Listesi
+- Ödeme Onayı ve Bildirimi
+
+### Ekranlar ve Fonksiyonlar
+
+#### 1. LoginScreen
+
+Kullanıcı adı ve şifre giriş alanları ile birlikte "Giriş" butonu bulunur. Giriş yapıldığında `TransferListScreen` ekranına yönlendirir.
+
+#### 2. TransferListScreen
+
+Veritabanında tanımlanmış gönderen hesapları listeler. Tutar girişi yapılabilen bir alan ve "Onay" butonu bulunur. Hesap seçilip tutar girildikten sonra `TransferRequestScreen` ekranına yönlendirir.
+
+#### 3. TransferRequestScreen
+
+Seçilen gönderen hesap bilgileri özetlenir ve QR kod olarak gösterilir. "NFC ile Ödeme" butonuna tıklayınca NFC tarama simülasyonu başlatılır ve alıcı seçimi için `RecipientList` modalı açılır.
+
+#### 4. RecipientList
+
+Veritabanında tanımlanmış alıcı hesapları listeler. Alıcı seçilip "Onayla" butonuna tıklanınca `ConfirmationScreen` ekranına yönlendirir.
+
+#### 5. ConfirmationScreen
+
+Gönderen, alıcı ve tutar bilgilerini özetler. "Onayla" veya "Reddet" butonları bulunur. Onaylanınca para aktarım işlemi gerçekleşir ve `ReceiverScreen` ekranına yönlendirir.
+
+#### 6. ReceiverScreen
+
+Ödeme işleminin başarıyla gerçekleştiğini gösterir ve ödeme bilgilerini özetler ve `TransferListScreen` ekranına döner.
